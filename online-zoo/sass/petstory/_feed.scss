@@ -1,0 +1,137 @@
+.feed {
+  background: var(--orange-gradienttwo);
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 3rem;
+  }
+  &__container {
+    margin-top: 6.9rem;
+    padding-top: 4.1rem;
+    margin-bottom: 10rem;
+    padding-bottom: 5.9rem;
+    background: var(--whiteglass-color);
+    backdrop-filter: blur(2px);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-large-2) {
+      margin-top: 3rem;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      margin-bottom: 5rem;
+    }
+  }
+  &__heading {
+    align-self: center;
+    color: var(--orange-colortwo);
+  }
+  &__subtitle {
+    color: var(--blackblue-color);
+    padding-top: 3rem;
+    margin-left: 9.9rem;
+
+    @media only screen and (max-width: $bp-large-2) {
+      padding-top: 2rem;
+      margin-left: 4.9rem;
+    }
+  }
+  &__par-1 {
+    padding-top: 4rem;
+    padding-left: 9.9rem;
+    @media only screen and (max-width: $bp-large-2) {
+      padding-top: 2rem;
+      padding-left: 4.9rem;
+      margin-right: 8rem;
+    }
+  }
+  &__par-2 {
+    padding-top: 1rem;
+    padding-left: 9.9rem;
+    padding-right: 19.8rem;
+    @media only screen and (max-width: $bp-large-2) {
+      padding-left: 4.9rem;
+      padding-right: 3.8rem;
+    }
+  }
+  &__btn-box {
+    margin-top: 6rem;
+    align-self: center;
+    @media only screen and (max-width: $bp-large-2) {
+      margin-top: 7rem;
+    }
+  }
+  &__btn {
+    padding: 1.6rem 7.4rem;
+  }
+}
+.widgets {
+  align-self: center;
+  display: flex;
+  gap: 3rem;
+  margin-top: 4rem;
+  &__heading {
+    margin-top: 6rem;
+    color: var(--blackblue-color);
+    align-self: center;
+
+    @media only screen and (max-width: $bp-large-2) {
+      margin-top: 4rem;
+    }
+  }
+}
+
+.widget {
+  width: 16.8rem;
+  height: 24.4rem;
+  &__icon-box {
+    width: 16.8rem;
+    height: 16.8rem;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 5px;
+      padding: 1px;
+      background: var(--orange-gradient);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
+  &__icon {
+    &--pay {
+      width: 10.8rem;
+      height: 6rem;
+    }
+
+    &--arrow {
+      width: 6.9rem;
+      height: 3.5rem;
+      margin-top: 6.2rem;
+    }
+    &--zoo {
+      width: 8.577rem;
+      height: 9.5rem;
+    }
+    &--monkey {
+      width: 12.475rem;
+      height: 7.16rem;
+    }
+  }
+  &__description {
+    margin-top: 3rem;
+    display: inline-block;
+    color: var(--blackblue-color);
+  }
+}

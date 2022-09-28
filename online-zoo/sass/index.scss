@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./_normilze";
+@import "./variables";
+@import "./base";
+@import "./typography";
+
+// main components
+@import "./header";
+@import "./nav";
+@import "./footer";
+
+//utils
+@import './base/utilites';
+
+// unic components
+@import "./components/button.scss";
+@import "./components/form.scss";
+@import "./components/progress-bar";
+
+//petstory components
+@import "./petstory/favorite";
+@import "./petstory/backstage";
+@import "./petstory/animals-slider";
+@import "./petstory/feed";
+@import "./petstory/testimonials";
+
+//donate components
+@import "./donate/panda";
+@import "./donate/feed-donate";

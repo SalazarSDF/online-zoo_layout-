@@ -1,0 +1,52 @@
+.form {
+  &__heading {
+    color: var(--white-color);
+  }
+  &__group {
+    display: flex;
+    margin-top: 1.4rem;
+  }
+  &:invalid [type="submit"] {
+    border-color: var(--red-color);
+    color: var(--red-color);
+  }
+
+  &:valid[type="submit"] {
+    background-color: black;
+  }
+  &__input {
+    width: 22.8rem;
+    height: 4.2rem;
+    padding-left: 1rem;
+    color: var(--gray-colorthree);
+    //padding: 1.5rem 2rem;
+    background-color: transparent;
+    border-color: var(--orange-colortwo);
+    border-radius: 3px;
+    display: block;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+    }
+    &:focus:invalid {
+      border-color: red;
+      &::placeholder {
+        color: red;
+      }
+    }
+  }
+  &__btn {
+    width: 12.9rem;
+    height: 4.2rem;
+    margin-left: 1rem;
+    color: var(--black-color);
+    background-color: var(--graylight-color);
+    border: 1px solid var(--black-color);
+    border-radius: 6px;
+    &:active {
+      border-color: var(--green-color);
+      color: var(--green-color);
+    }
+  }
+}

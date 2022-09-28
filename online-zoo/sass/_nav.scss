@@ -1,0 +1,29 @@
+.navigation {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__link:link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  &__link:link,
+  &__link:visited {
+    color: white;
+    &:hover {
+      color: var(--orange-color);
+    }
+  }
+  &__link--active:link,
+  &__link--active:visited {
+    & > span {
+      cursor: default;
+      background: var(--orange-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
