@@ -15,10 +15,6 @@
   border: none;
   cursor: pointer;
 
-  @media only screen and (max-width: $bp-large-2) {
-    padding: 1.6rem 9.2rem;
-  }
-
   &:hover {
     background: var(--orange-color);
   }

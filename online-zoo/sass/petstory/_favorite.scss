@@ -1,16 +1,12 @@
 .favorite {
   background: url(../assets/jpg/GiantPanda.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: bottom;
   background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
-
-  @media only screen and (max-width: $bp-large-2) {
-    background-position: bottom right -100px;
-    background-size: 120%;
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -20,13 +16,6 @@
     margin-right: 23rem;
     margin-top: 8.5rem;
     margin-bottom: 10rem;
-
-    @media only screen and (max-width: $bp-large-2) {
-      margin-right: 9.3rem;
-      margin-top: 4.33rem;
-      margin-bottom: 4.7rem;
-    }
-
     &::before {
       position: absolute;
       content: "";
@@ -36,13 +25,6 @@
       height: 46.5rem;
       background: var(--orange-gradient);
       border-radius: 100rem;
-
-      @media only screen and (max-width: $bp-large-2) {
-        top: -5.4rem;
-        right: 8.5rem;
-        width: 36.7rem;
-        height: 36.7rem;
-      }
     }
   }
   &__heading {
@@ -57,9 +39,6 @@
     text-transform: uppercase;
     z-index: 5;
     color: #ffffff;
-    @media only screen and (max-width: $bp-large-2) {
-      font-size: 8.5rem;
-    }
     &--yellow {
       color: yellow;
     }
@@ -67,9 +46,5 @@
   &__btn-box {
     margin-top: 6.2rem;
     margin-left: 1.3rem;
-    @media only screen and (max-width: $bp-large-2) {
-      margin-top: 4.1rem;
-      margin-left: 0;
-    }
   }
 }

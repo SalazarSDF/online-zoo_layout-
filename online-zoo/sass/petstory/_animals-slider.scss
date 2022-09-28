@@ -4,14 +4,6 @@
     url(../assets/png/strelitzia1.png);
   background-position: bottom left, bottom right;
   background-repeat: no-repeat;
-
-  @media only screen and (max-width: $bp-large-2) {
-    padding-top: 5rem;
-
-    background-image: url(../assets/png/palm_foto_tablet.png),
-      url(../assets/png/strelitzia1_tablet.png);
-  }
-
   &__cards {
     display: flex;
     flex-wrap: wrap;
@@ -19,9 +11,6 @@
     column-gap: 3rem;
     row-gap: 2rem;
     position: relative;
-    @media only screen and (max-width: $bp-largest-2) {
-      row-gap: 9.9rem;
-    }
   }
   &__btn-box {
     display: flex;
@@ -29,28 +18,17 @@
     justify-content: center;
     padding-top: 8rem;
     padding-bottom: 10rem;
-
-    @media only screen and (max-width: $bp-largest-2) {
-      row-gap: 9.2rem;
-      padding-bottom: 14rem;
-    }
   }
 
   &__btn--right {
     position: absolute;
     top: 46%;
     right: -8rem;
-    @media only screen and (max-width: $bp-largest-2) {
-      right: 35.3rem;
-    }
   }
   &__btn--left {
     position: absolute;
     top: 46%;
     left: -8.3rem;
-    @media only screen and (max-width: $bp-largest-2) {
-      left: 35.3rem;
-    }
   }
 }
 
@@ -65,10 +43,6 @@
   overflow: hidden;
   max-width: 36.6rem;
   max-height: 42.6rem;
-  @media only screen and (max-width: $bp-largest-2) {
-    max-width: 29.4rem;
-    max-height: 35.4rem;
-  }
   &__shape {
     position: relative;
   }
@@ -103,9 +77,6 @@
 
   &__img {
     transition: all 0.5s;
-    @media only screen and (max-width: $bp-largest-2) {
-      max-width: 100%;
-    }
   }
 
   &:hover {
@@ -129,8 +100,5 @@
     transform: translate(2rem, 2rem);
     color: var(--orange-color);
     position: absolute;
-    @media only screen and (max-width: $bp-large) {
-      transform: translate(0, 2rem);
-    }
   }
 }

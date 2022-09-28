@@ -51,7 +51,7 @@
     </header>
     <main>
       <section class="panda"></section>
-      <section class="feed-donate">
+      <section class="feed feed-donate">
         <div class="feed-donate__container container">
           <h3 class="feed-donate__heading heading-3">
             THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
@@ -68,28 +68,29 @@
           >
           <h3 class="feed-donate__subtitle heading-3">Donation Information</h3>
         </div>
-        <div class="feed-donante-2 container">
-          <h2 class="feed-donate-2__heading heading-2">
-            Pick and feed a friend
-          </h2>
-          <span class="feed-donate-2__subtitle subtitle">
+        <div class="feed__container container">
+          <div class="u-margin-left-small">
+            <h2 class="feed__heading heading-2">Pick and feed a friend</h2>
+          </div>
+          <div class="u-margin-right-big"></div>
+          <span class="feed__subtitle subtitle feed-donate__subtitle-2">
             We know the animals bring you joy, and in these extraordinary times,
             we’re glad.
           </span>
-          <div class="feed-donate-2__counter counter">
-            <div class="counter__number">
-              <span class="counter__number--text number-text">4</span>
-              <span class="counter__number--subtitle body-text"
+          <div class="feed-counter">
+            <div class="feed-counter__number">
+              <span class="feed-counter__number--text number-text">4</span>
+              <span class="feed-counter__number--subtitle body-text"
                 >Panda diet for the day.</span
               >
             </div>
             <img
-              class="counter__svg"
+              class="feed-counter__svg"
               src="../assets/svg/x_icon.svg"
               alt="X"
             />
             <img
-              class="counter__panda"
+              class="feed-counter__panda"
               src="../assets/png/panda_widget1.png"
               alt="panda"
             />
@@ -191,54 +192,53 @@
             </div>
           </div>
 
-          <div class="feed-donate-2__amount">
+          <div class="feed__amount">
             <input
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              class="feed-donate-2__input body-text"
+              class="feed__input body-text"
               type="number"
               placeholder="Another amount"
               maxlength="4"
             />
           </div>
 
-          <div class="feed-donate-2__radio-box">
-            <div class="feed-donate-2__radio">
+          <div class="feed__radio-box">
+            <div class="feed__radio">
               <input
-                class="feed-donate-2__radio-input"
+                class="feed__radio-input"
                 type="radio"
                 id="monthly"
                 name="pay"
               />
-              <label class="feed-donate-2__radio-label body-text" for="monthly">
-                <span class="feed-donate-2__radio-button"></span>
+              <label class="feed__radio-label body-text" for="monthly">
+                <span class="feed__radio-button"></span>
                 Monthly
               </label>
             </div>
-            <div class="feed-donate-2__radio">
+            <div class="feed__radio">
               <input
-                class="feed-donate-2__radio-input"
+                class="feed__radio-input"
                 type="radio"
                 id="once"
                 name="pay"
                 checked="checked"
               />
-              <label class="feed-donate-2__radio-label body-text" for="once">
-                <span class="feed-donate-2__radio-button"></span>
+              <label class="feed__radio-label body-text" for="once">
+                <span class="feed__radio-button"></span>
                 Once</label
               >
             </div>
           </div>
-          <div class="feed-donate-2__btn-box">
-            <a
-              class="feed-donate-2__btn btn btn-text"
-              href="javascript:void(0);"
+          <div class="feed__btn-box">
+            <a class="feed__btn btn btn-text" href="javascript:void(0);"
               >Feed a friend now</a
             >
           </div>
-          <div class="feed-donate-2__subtitle-2 body-text">
+          <div class="feed-donate__subtitle-3 body-text">
             Share with your friends on social networks
           </div>
         </div>
+        <div class="u-margin-top-medium"></div>
       </section>
     </main>
     <footer class="footer">

@@ -2,20 +2,11 @@
   display: grid;
   grid-template-columns: 1fr minmax(min-content, 116rem) 1fr;
   background-color: black;
-  @media only screen and (max-width: $bp-large) {
-    grid-template-columns: 1fr minmax(min-content, 93.9rem) 1fr;
-  }
-
-  @media only screen and (max-width: $bp-large-2) {
-    grid-template-columns: 4.3rem 93.9rem 1.8rem;
-  }
   &__container {
     grid-column: 2/3;
     display: grid;
     grid-template-columns: repeat(3, max-content);
     grid-template-rows: repeat(3, max-content) 5rem;
-    @media only screen and (max-width: $bp-large) {
-    }
   }
   &__logo {
     grid-column: 1/2;
@@ -44,29 +35,15 @@
     align-self: end;
     margin-left: 10.1rem;
     margin-right: 3.2rem;
-    @media only screen and (max-width: $bp-large) {
-      grid-column: 1/3;
-      margin-left: 29rem;
-    }
-
     &__list {
       display: flex;
       gap: 5.8rem;
-
-      @media only screen and (max-width: $bp-large-2) {
-        gap: 4.8rem;
-      }
     }
   }
   &__form {
     grid-column: 3/4;
     grid-row: 1/2;
     margin-top: 4rem;
-
-    @media only screen and (max-width: $bp-large) {
-      grid-column: 2/4;
-      margin-left: 24.2rem;
-    }
   }
   &__copyright {
     grid-column: 3/4;
@@ -74,10 +51,6 @@
     display: grid;
     justify-content: end;
     align-content: end;
-
-    @media only screen and (max-width: $bp-large) {
-      margin-left: 5.7rem;
-    }
   }
 }
 .social-item {
