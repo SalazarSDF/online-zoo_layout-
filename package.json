@@ -7,15 +7,10 @@
     "server": "rm -r ./dist && webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "browserslist": "last 5 versions",
-  "repository": {
-    "type": "git"
-  },
+  "browserslist": "last 2 versions",
   "keywords": [],
   "author": "SalazarSDF",
   "license": "ISC",
-  "bugs": {
-  },
   "devDependencies": {
     "@babel/core": "*",
     "@babel/preset-env": "*",
