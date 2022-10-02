@@ -32,10 +32,12 @@
   }
 
   @media only screen and (max-width: $bp-small-2) {
+    background-repeat: no-repeat;
     background-position: top -1.2rem right -10rem;
   }
 
   @media only screen and (max-width: $bp-smallest-2) {
+    background-repeat: no-repeat;
     max-width: 32rem;
     padding: unset;
     background-position: top 2.7rem right -3rem;
