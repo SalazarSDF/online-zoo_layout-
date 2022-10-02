@@ -1,6 +1,8 @@
 .backstage {
   background-image: url("../assets/png/flower_foto1.png");
   background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
   background-position: top 1.2rem right;
   padding-top: 14rem;
   padding-bottom: 9rem;
@@ -19,12 +21,16 @@
   @media only screen and (max-width: $bp-medium) {
     background-image: url("../assets/png/flower_foto1.png");
     background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
     background-position: top 1.2rem right;
   }
 
   @media only screen and (max-width: $bp-small) {
     background-image: url("../assets/png/flower_foto1-tablet.png");
     background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
     background-position: top -1.2rem right;
     padding-top: 5.3rem;
     padding-left: 2.4rem;
@@ -32,12 +38,10 @@
   }
 
   @media only screen and (max-width: $bp-small-2) {
-    background-repeat: no-repeat;
     background-position: top -1.2rem right -10rem;
   }
 
   @media only screen and (max-width: $bp-smallest-2) {
-    background-repeat: no-repeat;
     max-width: 32rem;
     padding: unset;
     background-position: top 2.7rem right -3rem;
