@@ -12,6 +12,11 @@
   text-align: center;
   color: var(--white-color);
   border: 1.18841px solid var(--white-color);
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.22899rem;
+    border: none;
+  }
 }
 
 .heading-2 {
@@ -112,6 +117,11 @@
 
   color: #ffffff;
 
+  @media only screen and (max-width: $bp-smallest-2) {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
   &-1 {
     margin-bottom: 1rem;
   }
@@ -127,6 +137,10 @@
   text-transform: uppercase;
 
   color: var(--color-black);
+
+  @media only screen and (max-width: $bp-small-2) {
+    font-size: 40.6015px;
+  }
 }
 
 .money-text {
@@ -140,4 +154,8 @@
   text-transform: uppercase;
 
   color: #333b41;
+
+  @media only screen and (max-width: $bp-small-2) {
+    font-size: 1.3rem;
+  }
 }

@@ -4,28 +4,123 @@
   background-position: top 1.2rem right;
   padding-top: 14rem;
   padding-bottom: 9rem;
+  @media only screen and (max-width: $bp-largest) {
+    background: var(--white-color);
+  }
+  @media only screen and (max-width: $bp-large) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-large-2) {
+    padding-top: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    background-image: url("../assets/png/flower_foto1.png");
+    background-repeat: no-repeat;
+    background-position: top 1.2rem right;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-image: url("../assets/png/flower_foto1-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top -1.2rem right;
+    padding-top: 5.3rem;
+    padding-left: 2.4rem;
+    padding-bottom: 2.9rem;
+  }
+
+  @media only screen and (max-width: $bp-small-2) {
+    background-position: top -1.2rem right -10rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest-2) {
+    max-width: 32rem;
+    padding: unset;
+    background-position: top 2.7rem right -3rem;
+    background-size: 20%;
+  }
+
   &__content {
     display: flex;
     gap: 8.7rem;
+
+    @media only screen and (max-width: $bp-large-2) {
+      gap: 3.1rem;
+    }
+    @media only screen and (max-width: $bp-smallest-2) {
+      margin-top: unset;
+    }
   }
   &__img {
     width: 60.9rem;
     height: 40.3rem;
+    @media only screen and (max-width: $bp-large) {
+      width: 45.5rem;
+      height: 40.8rem;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: $bp-large-2) {
+      margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
 
   &__text {
     max-width: 46.5rem;
   }
   &__heading {
+    @media only screen and (max-width: $bp-small-2) {
+      font-size: 3.4rem;
+    }
+    @media only screen and (max-width: $bp-smallest-2) {
+      font-size: 2.4rem;
+      margin-top: 10rem;
+      margin-left: 1rem;
+    }
   }
   &__par {
     margin-top: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-left: -4px;
+    }
+
+    @media only screen and (max-width: $bp-smallest-2) {
+      margin-top: 1rem;
+      margin-left: 1.2rem;
+      margin-right: 1.1rem;
+    }
   }
   &__subtitle {
     display: inline-block;
     margin-top: 5.4rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest-2) {
+      margin-top: 2rem;
+      margin-left: 1.2rem;
+    }
   }
   &__body-text {
     margin-top: 3.4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 2.1rem;
+      margin-left: -0.4rem;
+      margin-right: -2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest-2) {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
 }

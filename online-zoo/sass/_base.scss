@@ -1,3 +1,20 @@
+//RESPONSIVE BREAKPoINTs
+$bp-largest: 93.75em; // 1500px / 16px = 93.75em;
+$bp-largest-2: 87.5em; // 1400px / 16px = 87.5em;
+
+$bp-large: 75em; // 1200px / 16px
+$bp-large-2: 62.5em; // 1000px
+$bp-large-3: 62.25em; // 996px
+
+$bp-medium: 61.25em; // 980px / 16px
+$bp-medium-2: 50em; // 800px / 16px = 50em;
+
+$bp-small: 40em; // 640px /16
+$bp-fuck-designer: 39.9375em; // 639px
+$bp-small-2: 38.75em; //620px
+$bp-smallest: 27.5em; //440px
+$bp-smallest-2: 20em; //320/16px
+
 *,
 *::before,
 *::after {

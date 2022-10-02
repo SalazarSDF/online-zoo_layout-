@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="#"
+      <a class="header__logo" href="index.html"
         ><h1 class="heading-1">PetStory online</h1>
       </a>
       <nav class="navigation header__navigation">
@@ -48,15 +48,18 @@
           </li>
         </ul>
       </nav>
+      <div class="burger-icon__box">
+        <span class="burger-icon"></span>
+      </div>
     </header>
     <main>
       <section class="panda"></section>
-      <section class="feed feed-donate">
-        <div class="feed-donate__container container">
-          <h3 class="feed-donate__heading heading-3">
+      <section class="feed-donate">
+        <div class="feed-donate-info__container container">
+          <h3 class="feed-donate-info__heading heading-3">
             THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
           </h3>
-          <span class="feed-donate__par body-text--link"
+          <span class="feed-donate-info__par body-text--link"
             >Even though the Zoo has been able to reopen, we are at a greatly
             reduced capacity with educational programs and public and private
             events cancelled or postponed for additional months. We need you now
@@ -66,31 +69,26 @@
             and we need your help! Please consider a gift today – no matter what
             size – to help us sustain our mission.</span
           >
-          <h3 class="feed-donate__subtitle heading-3">Donation Information</h3>
+          <h3 class="feed-donate-info__subtitle heading-3">
+            Donation Information
+          </h3>
         </div>
-        <div class="feed__container container">
-          <div class="u-margin-left-small">
-            <h2 class="feed__heading heading-2">Pick and feed a friend</h2>
-          </div>
-          <div class="u-margin-right-big"></div>
-          <span class="feed__subtitle subtitle feed-donate__subtitle-2">
+        <div class="feed-donate__container container">
+          <h2 class="feed-donate__heading heading-2">Pick and feed a friend</h2>
+          <span class="feed-donate__subtitle subtitle">
             We know the animals bring you joy, and in these extraordinary times,
             we’re glad.
           </span>
-          <div class="feed-counter">
-            <div class="feed-counter__number">
-              <span class="feed-counter__number--text number-text">4</span>
-              <span class="feed-counter__number--subtitle body-text"
+          <div class="feed-donate__counter counter">
+            <div class="counter__number">
+              <span class="counter__number--text number-text">4</span>
+              <span class="counter__number--subtitle body-text"
                 >Panda diet for the day.</span
               >
             </div>
+            <img class="counter__svg" src="../assets/svg/x_icon.svg" alt="X" />
             <img
-              class="feed-counter__svg"
-              src="../assets/svg/x_icon.svg"
-              alt="X"
-            />
-            <img
-              class="feed-counter__panda"
+              class="counter__panda"
               src="../assets/png/panda_widget1.png"
               alt="panda"
             />
@@ -127,125 +125,133 @@
           </div>
           <div class="progress-bar__numbers">
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
+
               <span class="progress-bar__number--text money-text">5000</span>
             </div>
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
+
               <span class="progress-bar__number--text money-text">2000</span>
             </div>
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon-3.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
+
               <span class="progress-bar__number--text money-text">1000</span>
             </div>
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
+
               <span class="progress-bar__number--text money-text">500</span>
             </div>
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
+
               <span class="progress-bar__number--text money-text">250</span>
             </div>
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
+
               <span class="progress-bar__number--text money-text">100</span>
             </div>
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
               <span class="progress-bar__number--text money-text">50</span>
             </div>
             <div class="progress-bar__number">
-              <img
-                class="progress-bar__img"
-                src="../assets/svg/dollar_icon.svg"
-                alt="dollar icon"
-              />
+              <svg class="progress-bar__img">
+                <use
+                  xlink:href="../assets/svg/dollar_icon.svg#dollar_icon"
+                ></use>
+              </svg>
               <span class="progress-bar__number--text money-text">25</span>
             </div>
           </div>
 
-          <div class="feed__amount">
+          <div class="feed-donate__amount">
             <input
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              class="feed__input body-text"
+              class="feed-donate__input body-text"
               type="number"
               placeholder="Another amount"
               maxlength="4"
             />
           </div>
 
-          <div class="feed__radio-box">
-            <div class="feed__radio">
+          <div class="feed-donate__radio-box">
+            <div class="feed-donate__radio">
               <input
-                class="feed__radio-input"
+                class="feed-donate__radio-input"
                 type="radio"
                 id="monthly"
                 name="pay"
               />
-              <label class="feed__radio-label body-text" for="monthly">
-                <span class="feed__radio-button"></span>
+              <label class="feed-donate__radio-label body-text" for="monthly">
+                <span class="feed-donate__radio-button"></span>
                 Monthly
               </label>
             </div>
-            <div class="feed__radio">
+            <div class="feed-donate__radio">
               <input
-                class="feed__radio-input"
+                class="feed-donate__radio-input"
                 type="radio"
                 id="once"
                 name="pay"
                 checked="checked"
               />
-              <label class="feed__radio-label body-text" for="once">
-                <span class="feed__radio-button"></span>
+              <label class="feed-donate__radio-label body-text" for="once">
+                <span class="feed-donate__radio-button"></span>
                 Once</label
               >
             </div>
           </div>
-          <div class="feed__btn-box">
-            <a class="feed__btn btn btn-text" href="javascript:void(0);"
+          <div class="feed-donate__btn-box">
+            <a class="feed-donate__btn btn btn-text" href="javascript:void(0);"
               >Feed a friend now</a
             >
           </div>
-          <div class="feed-donate__subtitle-3 body-text">
+          <div class="feed-donate__subtitle-2 body-text">
             Share with your friends on social networks
           </div>
         </div>
-        <div class="u-margin-top-medium"></div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <a class="footer__logo" href="#"
+        <a class="footer__logo" href="index.html"
           ><img src="../assets/png/logo.png" alt="zoo-logo"
         /></a>
+        <a class="footer__logo-phone" href="#">
+          <span class="footer__logo-phone__text">PetStory online</span>
+        </a>
         <div class="footer__button-box">
           <a
             id="footer__btn"
