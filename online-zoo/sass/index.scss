@@ -10,12 +10,13 @@
 @import "./footer";
 
 //utils
-@import './base/utilites';
+@import "./base/utilites";
 
 // unic components
 @import "./components/button.scss";
 @import "./components/form.scss";
 @import "./components/progress-bar";
+@import "./components/burger";
 
 //petstory components
 @import "./petstory/favorite";

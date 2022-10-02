@@ -1,12 +1,24 @@
 .favorite {
   background: url(../assets/jpg/GiantPanda.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-position: bottom;
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
+
+  @media only screen and (max-width: $bp-large-2) {
+    background-position: bottom right -100px;
+    background-size: 120%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-position: bottom 6px right -64px;
+  }
+
+  @media only screen and (max-width: $bp-smallest-2) {
+    background-position: bottom 6px right -32px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -16,6 +28,29 @@
     margin-right: 23rem;
     margin-top: 8.5rem;
     margin-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-large-2) {
+      margin-right: 9.3rem;
+      margin-top: 4.33rem;
+      margin-bottom: 4.7rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 2.33rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 4.6rem;
+      margin-right: unset;
+      width: 100%;
+      align-items: normal;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 3.6rem;
+    }
+    @media only screen and (max-width: $bp-smallest-2) {
+      margin-top: 4rem;
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -25,6 +60,38 @@
       height: 46.5rem;
       background: var(--orange-gradient);
       border-radius: 100rem;
+
+      @media only screen and (max-width: $bp-large-2) {
+        top: -5.4rem;
+        right: 8.5rem;
+        width: 36.7rem;
+        height: 36.7rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        width: 23.76rem;
+        height: 23.76rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        top: -3.4rem;
+        right: 7rem;
+      }
+
+      @media only screen and (max-width: $bp-small-2) {
+        top: -5.4rem;
+        right: 1.7rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 11.9rem;
+        height: 11.9rem;
+        top: -3.4rem;
+        right: 4.7rem;
+      }
+      @media only screen and (max-width: $bp-smallest-2) {
+        top: -1.8rem;
+        right: 3.8rem;
+      }
     }
   }
   &__heading {
@@ -39,6 +106,29 @@
     text-transform: uppercase;
     z-index: 5;
     color: #ffffff;
+    @media only screen and (max-width: $bp-large-2) {
+      font-size: 8.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 5.42894rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 35rem;
+    }
+
+    @media only screen and (max-width: $bp-small-2) {
+      margin-left: 20rem;
+      font-size: 4.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 15rem;
+      font-size: 2.8rem;
+      margin-left: 17rem;
+    }
+
     &--yellow {
       color: yellow;
     }
@@ -46,5 +136,29 @@
   &__btn-box {
     margin-top: 6.2rem;
     margin-left: 1.3rem;
+    @media only screen and (max-width: $bp-large-2) {
+      margin-top: 4.1rem;
+      margin-left: 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: -0.5rem;
+      margin-left: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small-2) {
+      margin: unset;
+      padding: unset;
+      position: absolute;
+      top: 127%;
+      left: 18%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      left: 3%;
+    }
+    @media only screen and (max-width: $bp-smallest-2) {
+      top: 158%;
+    }
   }
 }
