@@ -18,13 +18,15 @@
   }
 
   @media only screen and (max-width: $bp-medium) {
+    height: 36.9rem;
+    background-position: top -12.7rem left -26rem;
     background-size: 200%;
   }
 
   @media only screen and (max-width: $bp-small) {
     background-size: 210%;
-    height: 33.5rem;
-    background-position: top -16rem left -26rem;
+    //height: 33.5rem;
+    //background-position: top -16rem left -26rem;
   }
 
   @media only screen and (max-width: $bp-small-2) {
@@ -38,7 +40,7 @@
   @media only screen and (max-width: $bp-smallest-2) {
     background-size: 240%;
 
-    height: 187px;
-    background-position: top -9.4rem left -15rem;
+    height: 221px;
+    background-position: top -6.4rem left -15rem;
   }
 }

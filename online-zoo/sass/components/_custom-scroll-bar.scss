@@ -1,0 +1,38 @@
+.custom-scroll-bar {
+  -webkit-appearance: none; /* Override default CSS styles */
+  width: 52%;
+  background: var(--graylight-colorthree);
+  border: 0.5px solid var(--pink-color);
+  border-radius: 5px;
+  //width: 140px; // button
+  //
+  //
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 12.5%; /* Set a specific slider handle width */
+    height: 6px; /* Slider handle height */
+    background: var(--orange-colortwo);
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 5px;
+
+    &:hover {
+      background: var(--green-color);
+    }
+  }
+
+  &::-moz-range-thumb {
+    width: 12.5%; /* Set a specific slider handle width */
+    height: 6px; /* Slider handle height */
+    background: var(--orange-colortwo);
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 5px;
+
+    &:active {
+      background: var(--green-color);
+    }
+  }
+}

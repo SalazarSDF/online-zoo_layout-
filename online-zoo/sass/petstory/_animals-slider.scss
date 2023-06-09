@@ -5,9 +5,12 @@
   background-position: bottom left, bottom right;
   background-repeat: no-repeat;
 
+  height: 119.6rem;
+
+  position: relative;
   @media only screen and (max-width: $bp-large-2) {
     padding-top: 5rem;
-
+    height: 112.6rem;
     background-image: url(../assets/png/palm_foto_tablet.png),
       url(../assets/png/strelitzia1_tablet.png);
   }
@@ -15,39 +18,42 @@
   @media only screen and (max-width: $bp-small) {
     background-position: bottom 0px left -50px, bottom right;
     background-size: 27%;
+
+    height: 101.9rem;
+  }
+
+  @media only screen and (max-width: $bp-small-2) {
+    height: 155.9rem;
   }
 
   @media only screen and (max-width: $bp-smallest-2) {
     background-position: bottom 0px left -13px, bottom -2px right -18px;
     padding-top: 3.6rem;
+    height: 155.9rem;
   }
 
-  &__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 3rem;
-    row-gap: 2rem;
+  &__container {
     position: relative;
-    @media only screen and (max-width: $bp-largest-2) {
-      row-gap: 9.9rem;
-    }
-    @media only screen and (max-width: $bp-large-2) {
-      row-gap: 9.4rem;
-    }
+    height: 88rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
     @media only screen and (max-width: $bp-small) {
-      row-gap: 9.2rem;
+      height: 81.9rem;
     }
 
     @media only screen and (max-width: $bp-small-2) {
-      row-gap: 2rem;
+      //height: 144.2rem;
+      height: 139.2rem;
     }
 
     @media only screen and (max-width: $bp-smallest-2) {
-      margin-left: 1.7rem;
-      margin-right: 1.7rem;
+      height: 139.2rem;
     }
   }
+  // &__cards {
+  // }
   &__btn-box {
     display: flex;
     align-items: center;
@@ -56,12 +62,14 @@
     padding-bottom: 10rem;
 
     @media only screen and (max-width: $bp-largest-2) {
-      row-gap: 9.2rem;
       padding-bottom: 14rem;
     }
 
+    @media only screen and (max-width: $bp-largest-2) {
+      padding-top: unset;
+    }
     @media only screen and (max-width: $bp-small) {
-      padding-top: 6rem;
+      padding-top: unset;
       padding-bottom: 10rem;
     }
 
@@ -73,17 +81,25 @@
 
   &__btn--right {
     position: absolute;
-    top: 46%;
-    right: -8rem;
+    top: 41%;
+    right: 14rem;
+    width: 6.2rem;
+    height: 6.2rem;
+    @media only screen and (max-width: $bp-largest) {
+      right: 7rem;
+    }
     @media only screen and (max-width: $bp-largest-2) {
       right: 35.3rem;
+    }
+    @media only screen and (max-width: $bp-large-2) {
+      top: 37%;
     }
     @media only screen and (max-width: $bp-medium) {
       right: 24.3rem;
     }
 
     @media only screen and (max-width: $bp-small) {
-      top: 45%;
+      top: 39%;
       right: 24.1rem;
     }
 
@@ -93,17 +109,27 @@
   }
   &__btn--left {
     position: absolute;
-    top: 46%;
-    left: -8.3rem;
+    top: 41%;
+    left: 14rem;
+    width: 6.2rem;
+    height: 6.2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      left: 7rem;
+    }
     @media only screen and (max-width: $bp-largest-2) {
       left: 35.3rem;
+    }
+
+    @media only screen and (max-width: $bp-large-2) {
+      top: 37%;
     }
     @media only screen and (max-width: $bp-medium) {
       left: 24.3rem;
     }
 
     @media only screen and (max-width: $bp-small) {
-      top: 45%;
+      top: 39%;
       left: 24.1rem;
     }
     @media only screen and (max-width: $bp-small-2) {
@@ -113,6 +139,50 @@
 }
 
 .cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  width: 115.8rem;
+  height: 87.2rem;
+  position: absolute;
+  transition: all 0.5s;
+  @media only screen and (max-width: $bp-largest-2) {
+    row-gap: 9.9rem;
+    width: 94rem;
+  }
+  @media only screen and (max-width: $bp-large-2) {
+    row-gap: 2.4rem;
+  }
+  @media only screen and (max-width: 999px) {
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    width: 60rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: max-content;
+    row-gap: 9.2rem;
+  }
+
+  @media only screen and (max-width: $bp-small-2) {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: $bp-smallest-2) {
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+  }
+  &__left {
+    transform: translate(-150%);
+  }
+  &__middle {
+  }
+  &__right {
+    transform: translate(150%);
+  }
 }
 .card {
   background-repeat: no-repeat;
@@ -121,20 +191,13 @@
   border: 1px solid var(--orange-colortwo);
   border-radius: 5px;
   overflow: hidden;
-  max-width: 36.6rem;
-  max-height: 42.6rem;
+  width: 36.6rem;
+  height: 42.6rem;
   @media only screen and (max-width: $bp-largest-2) {
     width: 29.4rem;
     height: 35.4rem;
   }
-  @media only screen and (max-width: $bp-medium) {
-    &:nth-child(1) {
-      display: none;
-    }
-    &:nth-child(2) {
-      display: none;
-    }
-  }
+
   @media only screen and (max-width: $bp-small) {
     width: 28.5rem;
     height: 33.2rem;
@@ -186,6 +249,7 @@
 
   &__img {
     transition: all 0.5s;
+    width: 100%;
     @media only screen and (max-width: $bp-largest-2) {
       max-width: 100%;
     }

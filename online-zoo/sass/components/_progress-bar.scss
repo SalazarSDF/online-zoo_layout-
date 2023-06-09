@@ -11,9 +11,10 @@
   gap: 90px;
   margin-top: 1.7rem;
 
-  @media only screen and (max-width: $bp-large-2) {
+  @media only screen and (max-width: $bp-large) {
     max-width: 81rem;
-    margin-left: 6.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -29,10 +30,13 @@
 
   @media only screen and (max-width: $bp-small-2) {
     height: 1.35rem;
+    max-width: 40rem;
+    gap: 6rem;
   }
 
   @media only screen and (max-width: $bp-smallest) {
-    gap: 6rem;
+    max-width: 30rem;
+    gap: 4rem;
   }
 
   @media only screen and (max-width: $bp-smallest-2) {
@@ -50,16 +54,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    @media only screen and (max-width: $bp-large) {
+      width: 96%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 94%;
+    }
     @media only screen and (max-width: $bp-small) {
       width: 88%;
+    }
+
+    @media only screen and (max-width: $bp-small-2) {
+      width: 93%;
+    }
+    @media only screen and (max-width: $bp-smallest-2) {
+      width: 87%;
     }
   }
   &__heading {
     margin-left: 0.4rem;
     margin-top: 4.8rem;
 
-    @media only screen and (max-width: $bp-large-2) {
-      margin-left: 6.4rem;
+    @media only screen and (max-width: $bp-large) {
+      text-align: center;
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -71,6 +88,10 @@
       text-align: left;
       margin-top: 4.1rem;
       margin-left: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small-2) {
+      text-align: center;
     }
 
     @media only screen and (max-width: $bp-smallest-2) {
@@ -88,7 +109,7 @@
     cursor: pointer;
     position: relative;
 
-    @media only screen and (max-width: $bp-large-2) {
+    @media only screen and (max-width: $bp-large) {
       &:nth-child(1) {
         display: none;
       }
@@ -102,39 +123,74 @@
         display: none;
       }
     }
-
-    &--active {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 2.3rem;
-        height: 2.3rem;
-        background: transparent;
-        border: 2px solid var(--orange-colortwo);
-        border-radius: 100px;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 4rem;
-        height: 4rem;
-        background: transparent;
-        border: 2px solid var(--orange-colortwo);
-        border-radius: 100px;
-      }
-    }
   }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked ~ .progress-bar__label .progress-bar__point::after {
+    opacity: 1;
+  }
+  &__input:checked ~ .progress-bar__label .progress-bar__point::before {
+    opacity: 1;
+  }
+  &__input:checked ~ .progress-bar__label .progress-bar__img {
+    fill: var(--orange-colortwo);
+  }
+  &__input:checked ~ .progress-bar__label .progress-bar__number--text {
+    color: var(--orange-colortwo);
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+  }
+
   &__point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 1rem;
     height: 1rem;
     background: var(--yellow-color);
     border-radius: 10rem;
+    display: block;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2.3rem;
+      height: 2.3rem;
+      background: transparent;
+      border: 2px solid var(--orange-colortwo);
+      border-radius: 100px;
+      opacity: 0;
+      @media only screen and (max-width: $bp-small-2) {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 4rem;
+      height: 4rem;
+      background: transparent;
+      border: 2px solid var(--orange-colortwo);
+      border-radius: 100px;
+      opacity: 0;
+      @media only screen and (max-width: $bp-small-2) {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
 
     @media only screen and (max-width: $bp-small-2) {
       width: 0.5rem;
@@ -142,24 +198,6 @@
     }
   }
 
-  &__numbers {
-    margin-top: 1.3rem;
-    display: flex;
-
-    @media only screen and (max-width: $bp-large-2) {
-      margin-left: 6.5rem;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      justify-content: center;
-      margin-left: unset;
-    }
-    @media only screen and (max-width: $bp-smallest-2) {
-      margin-top: 0.5rem;
-      margin-left: 8px;
-      justify-content: start;
-    }
-  }
   &__img {
     width: 1rem;
     height: 2rem;
@@ -171,93 +209,12 @@
     }
   }
   &__number {
-    @media only screen and (max-width: $bp-large-2) {
-      &:nth-child(1) {
-        display: none;
-      }
-      &:nth-child(2) {
-        margin-right: 5.8rem;
-      }
-      &:nth-child(3) {
-        margin-right: 5.2rem;
-      }
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      &:nth-child(2) {
-        display: none;
-      }
-      &:nth-child(3) {
-        display: none;
-      }
-      &:nth-child(6) {
-        > span {
-          color: var(--orange-colortwo);
-        }
-        > svg {
-          fill: var(--orange-colortwo);
-        }
-      }
-    }
-
-    &:nth-child(-n + 3) {
-      margin-right: 5.8rem;
-    }
-    &:nth-child(3) {
-      > span {
-        color: var(--orange-colortwo);
-      }
-      > svg {
-        fill: var(--orange-colortwo);
-      }
-    }
-    &:nth-child(4) {
-      margin-right: 7.3rem;
-    }
-    &:nth-child(5) {
-      margin-right: 7.8rem;
-    }
-    &:nth-child(6) {
-      margin-right: 7.5rem;
-    }
-    &:nth-child(7) {
-      margin-right: 8.8rem;
-    }
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
 
     @media only screen and (max-width: $bp-small-2) {
-      &:nth-child(5) {
-        margin-right: 7.3rem;
-      }
-      &:nth-child(6) {
-        margin-right: 5.8rem;
-      }
-      &:nth-child(7) {
-        margin-right: 5.9rem;
-      }
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-      &:nth-child(4) {
-        margin-right: 3.65rem;
-      }
-      &:nth-child(5) {
-        margin-right: 3.65rem;
-      }
-      &:nth-child(6) {
-        margin-right: 2.9rem;
-      }
-      &:nth-child(7) {
-        margin-right: 2.9rem;
-      }
-    }
-
-    @media only screen and (max-width: $bp-smallest-2) {
-      &:nth-child(6) {
-        margin-right: 3.5rem;
-      }
-      &:nth-child(7) {
-        margin-right: 4.5rem;
-      }
+      margin-top: 4rem;
     }
   }
 }

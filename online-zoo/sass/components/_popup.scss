@@ -1,0 +1,39 @@
+.popup {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  z-index: 15;
+  transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
+  border-radius: 100%;
+  transform: scale(0);
+
+  &--active {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+    border-radius: unset;
+    transform: scale(1);
+  }
+
+  &__rewiew {
+    position: relative;
+    width: 29.3rem;
+    height: 39.1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__close {
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(17rem, -22rem);
+    cursor: pointer;
+  }
+}

@@ -1,9 +1,76 @@
+.burger {
+  &__wrapper {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 15;
+    transition: all 0.5s;
+    transform: translate(0, -100%);
+    border-radius: 50%;
+    visibility: hidden;
+    &.--active {
+      transform: translate(0, 0);
+      border-radius: 0;
+      visibility: visible;
+    }
+    @media only screen and (min-width: $bp-medium-2) {
+      display: none;
+    }
+  }
+  &__logo {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 65.6px;
+    height: 41.6px;
+    z-index: 20;
+  }
+  &__heading {
+    display: inline-block;
+    width: 65.6px;
+    height: 41.6px;
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.2116px;
+    line-height: 120%;
+    /* or 18px */
+    text-align: center;
+    color: var(--orange-colortwo);
+    border: 0.950725px solid var(--orange-colortwo);
+
+    background: url(../assets/png/bamboo-burger.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0.7rem left 1rem;
+  }
+  &__navigation {
+    background: var(--white-color);
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+    transform: translate(0, -100%);
+    &.--active {
+      transform: translate(0, 0);
+    }
+    &__list {
+      padding-top: 8rem;
+      padding-left: 1rem;
+      padding-bottom: 4rem;
+      gap: 1.5rem;
+      flex-direction: column;
+    }
+  }
+}
 .burger-icon {
   &__box {
     display: none;
     width: 1.8rem;
-    height: 1rem;
+    height: 1.8rem;
     cursor: pointer;
+    z-index: 20;
 
     @media only screen and (max-width: $bp-medium-2) {
       display: block;
@@ -15,6 +82,7 @@
   border-radius: 10rem;
   display: inline-block;
   background-color: var(--white-color);
+  transition: all 0.5s;
 
   &::after {
     content: "";
@@ -24,6 +92,7 @@
     width: 1.8rem;
     height: 2px;
     background-color: var(--white-color);
+    transition: all 0.5s;
   }
   &::before {
     content: "";
@@ -34,5 +103,22 @@
     width: 1.8rem;
     height: 2px;
     background-color: var(--white-color);
+    transition: all 0.5s;
+  }
+
+  &.--active {
+    width: 0;
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+      transform-origin: center center;
+      background-color: var(--black-color);
+    }
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+      transform-origin: center center;
+      background-color: var(--black-color);
+    }
   }
 }

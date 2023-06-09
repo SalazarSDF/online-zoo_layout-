@@ -1,0 +1,54 @@
+.btn {
+  //a
+  background: var(--orange-gradient);
+  z-index: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.6rem 10rem;
+
+  display: inline-block;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  color: var(--white-color);
+
+  //Change for the <button> element
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-large-2) {
+    padding: 1.6rem 9.2rem;
+  }
+
+  &:hover {
+    background: var(--orange-color);
+  }
+  &:active {
+    background: var(--green-color);
+  }
+  &--disabled {
+    background: var(--gray-color);
+  }
+
+  &--cube {
+    border-radius: 0.5rem;
+    &--disabled {
+      background: var(--gray-colortwo);
+    }
+  }
+  &--slider-default {
+    padding: 1.6rem 5.8rem;
+    background: var(--orange-colortwo);
+  }
+}
+
+.btn--slider-arrow {
+  // button
+  background: var(--orange-gradient);
+  border: none;
+  border-radius: 10rem;
+  padding: 2.7rem 2.3rem;
+  cursor: pointer;
+  &:active {
+    background: var(--green-color);
+  }
+}

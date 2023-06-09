@@ -9,9 +9,6 @@
 @import "./nav";
 @import "./footer";
 
-//utils
-@import "./base/utilites";
-
 // unic components
 @import "./components/button.scss";
 @import "./components/form.scss";
@@ -24,6 +21,8 @@
 @import "./petstory/animals-slider";
 @import "./petstory/feed";
 @import "./petstory/testimonials";
+@import "./components/custom-scroll-bar";
+@import "./components/popup";
 
 //donate components
 @import "./donate/panda";

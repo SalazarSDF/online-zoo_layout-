@@ -1,16 +1,24 @@
 {
-  "name": "salazarsdf",
+  "name": "salazarsdf-jsfe2022q3",
   "version": "1.0.0",
-  "description": "@salazarsdf",
+  "description": "Private repository for @salazarsdf",
   "private": "true",
   "scripts": {
     "server": "rm -r ./dist && webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "browserslist": "last 2 versions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/salazarsdf-JSFE2022Q3.git"
+  },
   "keywords": [],
   "author": "SalazarSDF",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/salazarsdf-JSFE2022Q3.git/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/salazarsdf-JSFE2022Q3#readme",
   "devDependencies": {
     "@babel/core": "*",
     "@babel/preset-env": "*",
